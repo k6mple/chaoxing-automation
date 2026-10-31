@@ -1,0 +1,77 @@
+{
+  "source": "chaoxing-toolkit local engine",
+  "updatedAt": "2026-10-31T06:02:02.585772+00:00",
+  "feature": "per-video-seek-probe-then-shadow-16-fallback-2",
+  "files": [
+    {
+      "source": "lib/ai.js",
+      "target": "scripts/toolkit/lib/ai.js",
+      "sha256": "4B8876C3EDC11750DC75E4560DB4D44B93970C909ADA422584CB2C77182DEC9E"
+    },
+    {
+      "source": "lib/answer.js",
+      "target": "scripts/toolkit/lib/answer.js",
+      "sha256": "54AD19D82671C9FC8FE3146D0DC424AC86A6FB87EE706CDAA73D2DC5F62DB15D"
+    },
+    {
+      "source": "lib/batch-answer.js",
+      "target": "scripts/toolkit/lib/batch-answer.js",
+      "sha256": "2CA67721E1D1D68742AB49ED7964B368B203FF9BC82D462DB7057F841FD08254"
+    },
+    {
+      "source": "lib/browser.js",
+      "target": "scripts/toolkit/lib/browser.js",
+      "sha256": "355B6A312A2D2E9CBD976B4F1B1D010543FF621D13B513556AA1D55BEDB2515B"
+    },
+    {
+      "source": "lib/course.js",
+      "target": "scripts/toolkit/lib/course.js",
+      "sha256": "57E0828938E9CEF4777E104D3A1634D7E4A46DF1E98AB54C311AB722308321A3"
+    },
+    {
+      "source": "lib/platform.js",
+      "target": "scripts/toolkit/lib/platform.js",
+      "sha256": "EAAD8D42839FEF2B8F2C8CF11F828891609A6FD084CB3134C2EE4FD7719C8F5F"
+    },
+    {
+      "source": "lib/playback.js",
+      "target": "scripts/toolkit/lib/playback.js",
+      "sha256": "CE629681D0F86031A6DA6743E851CF98E87C30F09E5B73099C7FA6512B893E3F"
+    },
+    {
+      "source": "lib/quiz.js",
+      "target": "scripts/toolkit/lib/quiz.js",
+      "sha256": "DEF9ABAD90391393A8A830CD9C20BDB4930D2E311E192A1EFDD0F6D3F8DFDE02"
+    },
+    {
+      "source": "lib/recovery.js",
+      "target": "scripts/toolkit/lib/recovery.js",
+      "sha256": "CF557F9D49CBEE642565BE2F34DAA3275D080942B59AB90B8F4B3EBB330D71B3"
+    },
+    {
+      "source": "lib/runner.js",
+      "target": "scripts/toolkit/lib/runner.js",
+      "sha256": "1F733EB1E9CB414EAB0378E96E4A5326514703E61A49E0AA5813F4E53BC6B72D"
+    },
+    {
+      "source": "lib/store.js",
+      "target": "scripts/toolkit/lib/store.js",
+      "sha256": "B5547F0108F401C6A89CD344C8DCBC28A57D83A02BCCBBE036493597D1F60A4C"
+    },
+    {
+      "source": "lib/video.js",
+      "target": "scripts/toolkit/lib/video.js",
+      "sha256": "B4EA7D549C98011F95B84D8A4DAFA51848FFEC4A33F6D3FE3EEA56DAB2938C29"
+    },
+    {
+      "source": "lib/vision.js",
+      "target": "scripts/toolkit/lib/vision.js",
+      "sha256": "97CE42E10601F5A8D014680D600A1D39B2AFFBE8D13C08B15C2DDF369434E98F"
+    },
+    {
+      "source": "lib/workflow.js",
+      "target": "scripts/toolkit/lib/workflow.js",
+      "sha256": "F28E8619CE6E8CE0C5025D81A8B4C2B25C2D977978561B845359AD6ED461B612"
+    }
+  ]
+}

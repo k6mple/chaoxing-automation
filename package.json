@@ -1,0 +1,20 @@
+{
+  "name": "chaoxing-automation-skill",
+  "version": "1.1.1",
+  "private": true,
+  "license": "MIT",
+  "description": "学习通任务自动化 Skill 的独立执行环境",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "cx": "node scripts/cx.js",
+    "test": "node --test scripts/toolkit/test/*.test.js test/*.test.js",
+    "test:browser": "node scripts/toolkit/test/browser.js",
+    "check": "node scripts/check.js"
+  },
+  "dependencies": {
+    "playwright-core": "1.64.1"
+  }
+}

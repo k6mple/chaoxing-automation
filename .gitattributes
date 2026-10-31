@@ -1,0 +1,2 @@
+* text=auto eol=lf
+scripts/toolkit/lib/*.js -text

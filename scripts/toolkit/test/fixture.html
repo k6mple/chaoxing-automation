@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>Quiz offline fixture</title>
+<style>li,a { display:block; padding:8px; cursor:pointer } #spanHas,#spanNot{display:none}</style>
+<div id="questions"></div>
+<a class="btnSubmit">提交</a><div id="confirm"></div>
+<script>
+const state = { m: 'BC', j: 'true', s: '' };
+window.__submitted = 0;
+const choices = (qid, type, opts) => `<div class="singleQuesId" data="${qid}"><div class="newZy_TItle">${type}</div><div class="Zy_TItle">【${type}】 Test ${qid}</div><ul class="Zy_ulTop">${opts.map(([k,t])=>`<li data-key="${k}"><span class="${type==='多选'?'num_option_dx':'num_option'}" data="${k}">${k}</span><a>${t}</a></li>`).join('')}</ul><input name="answer${qid}" value="${state[qid]}"></div>`;
+function render(){
+  document.querySelector('#questions').innerHTML = choices('m','多选',[['A','Apple'],['B','Banana'],['C','Cherry']])+choices('j','判断',[['true','对'],['false','错']])+choices('s','单选',[['A','Alpha'],['B','Beta']])+`<div class="singleQuesId" data="e"><div class="newZy_TItle">简答</div><div class="Zy_TItle">Explain</div><textarea id="answere"></textarea></div><div class="singleQuesId" data="b"><div class="newZy_TItle">填空</div><div class="Zy_TItle">Two blanks</div><textarea id="answerEditorb1" style="display:none"></textarea><input type="text" id="answerEditorb2"></div>`;
+}
+let essay = '', blank = '';
+window.UE = { instants: { answere: { key:'answere', setContent(value){ essay=value }, getContent(){ return essay } }, ueditorInstant9: { key:'answerEditorb1', setContent(value){blank=value}, getContent(){return blank} } } };
+render();
+document.addEventListener('click', event=>{
+ const li=event.target.closest('li[data-key]');
+ if(li){const qid=li.closest('.singleQuesId').getAttribute('data'),key=li.dataset.key;
+   if(qid==='m'){const keys=new Set(state.m.split(''));keys.has(key)?keys.delete(key):keys.add(key);state.m=[...keys].join('');}
+   else state[qid]=key;
+   render(); // Replace all nodes to reproduce the real site's partial re-render.
+ }
+ if(event.target.matches('.btnSubmit'))document.querySelector('#confirm').innerHTML='<a class="jb_btn">确定</a>';
+ if(event.target.matches('.jb_btn')){window.__submitted++;document.querySelector('.btnSubmit').remove();document.querySelector('#confirm').innerHTML='';document.body.insertAdjacentHTML('beforeend','<p>本次成绩 100 分 已完成</p>');}
+});
+</script>

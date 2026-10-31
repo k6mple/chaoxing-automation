@@ -1,0 +1,4 @@
+interface:
+  display_name: "学习通任务自动化"
+  short_description: "串行完成学习通视频与章节测验，支持弹窗处理、断点恢复和结果核验"
+  default_prompt: "使用 $chaoxing-automation 按我指定的课程和章节范围执行任务，沿用已有授权，记录结果并处理可恢复异常。"

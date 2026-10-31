@@ -1,0 +1,13 @@
+node_modules/
+.chaoxing/
+dist/
+*.tmp
+__pycache__/
+chrome-profile/
+data/
+*.log
+.env
+.env.*
+credentials*.yaml
+credentials*.yml
+credentials*.json
